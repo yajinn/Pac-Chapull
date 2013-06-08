@@ -7,7 +7,7 @@
     <meta property="og:title" content="Pac-Chapull | Pacman Clone" />
     <meta property="og:description" content="GEZİ PARKINA SAHİP ÇIK" />
     <meta property="og:image" content="http://sly777.github.io/Pac-Chapull/images/pac_1.png" />
-    
+
     <style type="text/css">
       @font-face {
 	    font-family: 'BDCartoonShoutRegular';
@@ -89,6 +89,23 @@
 <body>
     <div class="container">
         <h1><img src="images/logo.png" width="407" height="219" > <a id="hashtag1" href="https://twitter.com/search?q=%23direngezi" target="_blank">#direngezi</a>  <a id="hashtag2" href="https://twitter.com/search?q=%23occupygezi" target="_blank">#occupygezi</a></h1>
+
+        <!-- SHARE BUTTONS -->
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=163084173850239";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sly777.github.io/Pac-Chapull/">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <!-- SHARE BUTTONS -->
+
         <div id="pacman"></div>
     </div>
 
