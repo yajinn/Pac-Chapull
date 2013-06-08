@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pac-Chapull</title>
+    
+    <style type="text/css">
+      @font-face {
+	    font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+      }
+      #pacman {
+        height:450px;
+        width:342px;
+        margin:20px auto;
+      }
+      #shim { 
+        font-family: BDCartoonShoutRegular; 
+        position:absolute;
+        visibility:hidden
+      }
+      h1 {
+          font-family: BDCartoonShoutRegular;
+          text-align:center;
+          display:block;
+          width: 413px;
+          border: none;
+          margin: 0 auto;
+          position: relative;
+          margin-bottom: 10px;
+      }
+      .footer {
+          width: 413px;
+          margin: 0 auto;
+          color: white;
+          font-size: 11px;
+          text-align: center;
+      }
+      .footer a {
+          color: orange;
+      }
+      .footer ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+      .footer ul li {
+          margin-bottom: 3px;
+      }
+
+      body { font-family:sans-serif; background-color: black; color: white; }
+      a { text-decoration:none; }
+      a:hover { color: white !important; }
+    .container {
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+      #hashtag1 {
+          position: absolute;
+          top: 93px;
+          left: 93px;
+          font-size: 13px;
+          color: #E8E013;
+          text-decoration: underline;
+          font-family: sans-serif;
+          text-transform: uppercase;
+      }
+      #hashtag2 {
+          position: absolute;
+          top: 93px;
+          left: 242px;
+          font-size: 13px;
+          color: #E8E013;
+          text-decoration: underline;
+          font-family: sans-serif;
+          text-transform: uppercase;
+      }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><img src="images/logo.png" width="407" height="219" > <a id="hashtag1" href="https://twitter.com/search?q=%23direngezi" target="_blank">#direngezi</a>  <a id="hashtag2" href="https://twitter.com/search?q=%23occupygezi" target="_blank">#occupygezi</a></h1>
+        <div id="pacman"></div>
+    </div>
+
+    <div class="footer">
+        <p><a href="https://github.com/Sly777/Pac-Chapull/" target="_blank">Github</a>'ta kodlar bulunmaktadır.</p>
+
+        <ul>
+            <li><a href="http://Be.net/begumbaysal" target="_blank">Designed by Begüm Baysal</a></li>
+            <li><a href="http://github.com/Sly777">Coded by İlker Güller</a></li>
+        </ul>
+    </div>
+
+
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+</body>
+</html>
