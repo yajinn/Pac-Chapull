@@ -1,81 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Pac-chapull by Sly777</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="utf-8" />
+    <title>Pac-Chapull</title>
+      <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <![endif]-->
+      <!--[if lt IE 8]>
+      <link rel="stylesheet" href="stylesheets/ie.css">
+      <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <style type="text/css">
+      @font-face {
+	    font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+      }
+      #pacman {
+        height:450px;
+        width:342px;
+        margin:20px auto;
+      }
+      #shim { 
+        font-family: BDCartoonShoutRegular; 
+        position:absolute;
+        visibility:hidden
+      }
+      h1 {
+          font-family: BDCartoonShoutRegular;
+          text-align:center;
+          display:block;
+          width: 413px;
+          border: none;
+          margin: 0 auto;
+          position: relative;
+          margin-bottom: 10px;
+      }
+      .footer {
+          width: 413px;
+          margin: 0 auto;
+          color: white;
+          font-size: 11px;
+          text-align: center;
+      }
+      .footer a {
+          color: orange;
+      }
+      .footer ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+      .footer ul li {
+          margin-bottom: 3px;
+      }
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/Sly777/Pac-Chapull">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/Sly777/Pac-Chapull/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/Sly777/Pac-Chapull/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+      body { font-family:sans-serif; background-color: black; color: white; }
+      a { text-decoration:none; }
+      a:hover { color: white !important; }
+    .container {
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+      #hashtag1 {
+          position: absolute;
+          top: 93px;
+          left: 93px;
+          font-size: 13px;
+          color: #E8E013;
+          text-decoration: underline;
+          font-family: sans-serif;
+          text-transform: uppercase;
+      }
+      #hashtag2 {
+          position: absolute;
+          top: 93px;
+          left: 242px;
+          font-size: 13px;
+          color: #E8E013;
+          text-decoration: underline;
+          font-family: sans-serif;
+          text-transform: uppercase;
+      }
+    </style>
 
-    <div class="wrapper">
+</head>
 
-      <section>
-        <div id="title">
-          <h1>Pac-chapull</h1>
-          <p>Gezi Parkına Sahip Çık</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Sly777">Sly777</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h1>
-<a name="pac-chapull-v1" class="anchor" href="#pac-chapull-v1"><span class="octicon octicon-link"></span></a>Pac-Chapull v.1</h1>
-
-<h2>
-<a name="gezi-parkna-sahip-k" class="anchor" href="#gezi-parkna-sahip-k"><span class="octicon octicon-link"></span></a>Gezi parkına sahip çık!</h2>
-
-<h1>
-<a name="occupygezi" class="anchor" href="#occupygezi"><span class="octicon octicon-link"></span></a><a href="https://twitter.com/search?q=%23occupygezi">#occupygezi</a>
-</h1>
-
-<h1>
-<a name="direngezi" class="anchor" href="#direngezi"><span class="octicon octicon-link"></span></a><a href="https://twitter.com/search?q=%23direngezi">#direngezi</a>
-</h1>
-
-<p>Pacman ile Gezi Parkı birleşirse ne olur.. Gezi Parkına destek için hazırlanan pacman oyunu</p>
-
-<hr><p><strong>Teknik Konular</strong></p>
-
-<p>Oyunun bütün dosyaları bulunmaktadır. Pure JS ile yazıldı. Hata düzeltmeleri, yeni özellikler, vs. için branch yada fix oluşturabilirsiniz. Update'ler yapmaya çalışacağım. AI fazla iyi değil ki fark anlaşılmıyor.</p>
-
-<hr><p><strong>Hazırlayanlar</strong></p>
-
-<p>Tasarım : <a href="http://Be.net/begumbaysal">Begüm Baysal</a>
-&amp; Kod : <a href="http://github.com/Sly777">İlker Güller</a></p>
-      </section>
-
+<body>
+    <div class="container">
+        <h1><img src="images/logo.png" width="407" height="219" > <a id="hashtag1" href="https://twitter.com/search?q=%23direngezi" target="_blank">#direngezi</a>  <a id="hashtag2" href="https://twitter.com/search?q=%23occupygezi" target="_blank">#occupygezi</a></h1>
+        <div id="pacman"></div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-22085813-8");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
-  </body>
+    <div class="footer">
+        <p><a href="https://github.com/Sly777/Pac-Chapull/" target="_blank">Github</a>'ta kodlar bulunmaktadır.</p>
+
+        <ul>
+            <li><a href="http://Be.net/begumbaysal" target="_blank">Designed by Begüm Baysal</a></li>
+            <li><a href="http://github.com/Sly777" target="_blank">Coded by İlker Güller</a></li>
+        </ul>
+    </div>
+
+
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-22085813-8");
+            pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+
+</body>
 </html>
